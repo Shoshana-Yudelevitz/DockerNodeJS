@@ -19,4 +19,6 @@ jobs:
           exit 1
 
       - name: Induce failure
-        run: exit 2
+        run: |
+          echo "This step will fail intentionally"
+          exit 2
