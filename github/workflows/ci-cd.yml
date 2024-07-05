@@ -13,5 +13,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Build Docker image
-        run: docker build -t your-docker-image-name .
+      - name: Build Docker image with error
+        run: |
+          docker build -t your-docker-image-name -f non_existent_dockerfile .
