@@ -15,10 +15,5 @@ jobs:
 
       - name: Run failing script
         run: |
-          echo "This script will fail!"
+          echo "This script will intentionally fail!"
           exit 1
-
-      - name: Induce failure
-        run: |
-          echo "This step will fail intentionally"
-          exit 2
